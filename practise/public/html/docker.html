@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Docker Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Introduction to Docker</h3>
+            <p>Docker is a platform for building, deploying, and managing applications using containerization. Containers package an application and its dependencies together, ensuring consistency across environments.</p>
+            
+            <h3>2. Key Features of Docker</h3>
+            <ul>
+                <li><p><strong>Lightweight:</strong> Containers share the host OS kernel, reducing overhead compared to virtual machines.</p></li>
+                <li><p><strong>Portability:</strong> Docker containers run consistently on any system with Docker installed.</p></li>
+                <li><p><strong>Efficiency:</strong> Faster startup times and efficient resource usage.</p></li>
+                <li><p><strong>Isolation:</strong> Applications run in isolated environments for better security and performance.</p></li>
+            </ul>
+
+            <h3>3. Main Components of Docker</h3>
+            <ul>
+                <li><p><strong>Docker Engine:</strong> The runtime responsible for building, running, and managing containers.</p></li>
+                <li><p><strong>Docker Images:</strong> Read-only templates used to create containers.</p></li>
+                <li><p><strong>Docker Containers:</strong> Lightweight, standalone, and executable units for applications.</p></li>
+                <li><p><strong>Docker Hub:</strong> A repository for storing and sharing Docker images.</p></li>
+            </ul>
+
+            <h3>4. Use Cases of Docker</h3>
+            <ul>
+                <li><p><strong>Development and Testing:</strong> Simplifies setup and ensures consistency across teams.</p></li>
+                <li><p><strong>Microservices:</strong> Ideal for breaking down applications into smaller, manageable services.</p></li>
+                <li><p><strong>CI/CD:</strong> Automates application delivery pipelines.</li>
+                <li><p><strong>Application Deployment:</strong> Ensures consistency between development and production environments.</p></li>
+            </ul>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=fqMOX6JJhGo" class="video-link" target="_blank">Docker Basics</a>
+                <a href="https://www.youtube.com/watch?v=VfGW0Qiy2I0" class="video-link" target="_blank">Docker Crash Course</a>
+                <a href="https://www.youtube.com/watch?v=ZVaRK10HBjo" class="video-link" target="_blank">Deploying Applications with Docker</a>
+            </div>
+</div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+
+</body>
+</html>

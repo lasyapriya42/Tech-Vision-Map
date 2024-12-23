@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Git and GitHub Roadmap</h2>
+        <div class="tech-container">
+            <h3>Introduction to Git</h3>
+            <p>
+                Git is a distributed version control system used to track changes in source code during software development. Learn the basics at 
+                <a href="https://git-scm.com/doc" target="_blank">Git Documentation</a>.
+            </p>
+
+            <h3>Introduction to GitHub</h3>
+            <p>
+                GitHub is a web-based platform for hosting and sharing Git repositories. Explore its features at 
+                <a href="https://docs.github.com/en/get-started" target="_blank">GitHub Docs</a>.
+            </p>
+
+            <h3>Basic Git Commands</h3>
+            <ul>
+                <li><code>git init</code>: Initialize a new Git repository.</li>
+                <li><code>git clone</code>: Clone an existing repository.</li>
+                <li><code>git add</code>: Stage changes for the next commit.</li>
+                <li><code>git commit</code>: Record staged changes.</li>
+                <li><code>git push</code>: Push changes to a remote repository.</li>
+                <li><code>git pull</code>: Fetch and merge changes from a remote repository.</li>
+                <li><code>git branch</code>: List, create, or delete branches.</li>
+                <li><code>git merge</code>: Merge branches together.</li>
+                <li><code>git log</code>: View the commit history.</li>
+            </ul>
+
+            <h3>GitHub Workflow</h3>
+            <p>
+                Understand GitHub workflows, including pull requests and issue tracking. Read more at 
+                <a href="https://docs.github.com/en/get-started/quickstart/github-flow" target="_blank">GitHub Flow</a>.
+            </p>
+
+            <h3>Advanced Git Features</h3>
+            <ul>
+                <li><strong>Rebasing:</strong> Modify commit history with <code>git rebase</code>. Learn more at 
+                    <a href="https://git-scm.com/docs/git-rebase" target="_blank">Git Rebase Documentation</a>.
+                </li>
+                <li><strong>Stashing:</strong> Temporarily store changes with <code>git stash</code>. Learn more at 
+                    <a href="https://git-scm.com/docs/git-stash" target="_blank">Git Stash Documentation</a>.
+                </li>
+                <li><strong>Cherry-Picking:</strong> Apply specific commits with <code>git cherry-pick</code>. Learn more at 
+                    <a href="https://git-scm.com/docs/git-cherry-pick" target="_blank">Git Cherry-Pick Documentation</a>.
+                </li>
+            </ul>
+
+            <h3>GitHub Collaboration</h3>
+            <p>
+                Collaborate with teams using features like pull requests, forks, and project boards. Learn more at 
+                <a href="https://www.geeksforgeeks.org/what-is-collaboration-in-git/" target="_blank">GitHub Collaboration Docs</a>.
+            </p>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=RGOj5yH7evk" class="video-link" target="_blank">Git and GitHub Basics</a>
+                <a href="https://www.youtube.com/watch?v=HVsySz-h9r4" class="video-link" target="_blank">Version Control with Git</a>
+                <a href="https://www.youtube.com/watch?v=oFYyTZwMyAg" class="video-link" target="_blank">GitHub Collaboration</a>
+                <a href="https://www.youtube.com/watch?v=JTE2Fn_sCZs" class="video-link" target="_blank">Advanced Git Features</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function() {
+            var videoContainer = document.getElementById('video-container');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

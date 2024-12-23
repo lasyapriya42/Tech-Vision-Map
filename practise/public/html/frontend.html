@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Technologies</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Frontend Technologies</h2>
+        <div class="tech-container">
+            <h3>HTML (HyperText Markup Language)</h3>
+            <p>HTML is the standard markup language for documents designed to be displayed in a web browser. It provides the basic structure of a webpage. <a href="html.html">HTML</a></p>
+            
+            <h3>CSS (Cascading Style Sheets)</h3>
+            <p>CSS describes the presentation of a document written in HTML. It controls layout, colors, fonts, and overall design. <a href="css.html">CSS</a></p>
+            
+            <h3>JavaScript</h3>
+            <p>JavaScript is a programming language that enables interactive web pages. It allows dynamic changes to content and user interaction. <a href="https://www.w3schools.com/js/">JavaScript</a></p>
+            
+            <h3>Frontend Frameworks and Libraries</h3>
+            <p>Frontend frameworks like React, Angular, and Vue.js, along with libraries like jQuery, help simplify and speed up development. 
+                <a href="react.html">React</a>, 
+                <a href="angular.html">Angular</a>, 
+                <a href="vue.html">Vue.js</a>, 
+            </p>
+            
+            <h3>User Experience (UX) and User Interface (UI)</h3>
+            <p>UX and UI are critical in frontend development. UX focuses on the user's journey, while UI focuses on the interface elements and aesthetics. <a href="https://www.smashingmagazine.com/category/usability-and-ux/">UX/UI</a></p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" class="video-link" target="_blank">HTML Video</a>
+                <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" class="video-link" target="_blank">CSS Video</a>
+                <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk" class="video-link" target="_blank">JavaScript Video</a>
+                <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" class="video-link" target="_blank">React Video</a>
+                <a href="https://www.youtube.com/watch?v=3qBXWUpoPHo" class="video-link" target="_blank">Angular Video</a>
+                <a href="https://www.youtube.com/watch?v=4deVCNJq3qc" class="video-link" target="_blank">Vue.js Video</a>
+                <a href="https://www.youtube.com/watch?v=QhQ4m5g2fhA" class="video-link" target="_blank">jQuery Video</a>
+                <a href="https://www.youtube.com/watch?v=c9Wg6Cb_YlU" class="video-link" target="_blank">UX/UI Video</a>
+            </div>
+        </div>
+    </section>
+        <script>
+            document.getElementById('toggle-videos').addEventListener('click', function() {
+                var videoContainer = document.getElementById('video-container');
+                if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                    videoContainer.style.display = 'block';
+                } else {
+                    videoContainer.style.display = 'none';
+                }
+            });
+        </script>
+</body>
+</html>

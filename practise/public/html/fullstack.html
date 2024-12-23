@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Full Stack Development</h2>
+        <div class="tech-container">
+            <h3>Frontend Basics</h3>
+            <p>Learn HTML, CSS, JavaScript, and frontend frameworks (React, Vue, Angular) to create user interfaces. <a href="frontend.html">Learn More</a></p>
+
+            <h3>Backend Basics</h3>
+            <p>Understand server-side technologies like Node.js, Python, and databases (SQL, MongoDB). <a href="backend.html">Learn More</a></p>
+
+            <h3>APIs & Web Services</h3>
+            <p>Learn how to design and integrate RESTful APIs for communication between frontend and backend. <a href="api.html">Learn More</a></p>
+
+            <h3>Version Control</h3>
+            <p>Master Git for version control and collaboration using GitHub or GitLab. <a href="git.html">Learn More</a></p>
+
+            <h3>DevOps Basics</h3>
+            <p>Learn how to deploy and manage applications with tools like Docker and Kubernetes. <a href="devops.html">Learn More</a></p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=3JluqTojuME" class="video-link" target="_blank">Full Stack Development Introduction</a>
+                <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" class="video-link" target="_blank">Node.js Crash Course</a>
+                <a href="https://www.youtube.com/watch?v=w7ejDZ8SWv8" class="video-link" target="_blank">React JS Crash Course</a>
+                <a href="https://www.youtube.com/watch?v=0g3gF8V7_i4" class="video-link" target="_blank">MongoDB Crash Course</a>
+                <a href="https://www.youtube.com/watch?v=RGOj5yH7evk" class="video-link" target="_blank">Git and GitHub for Beginners</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function() {
+            var videoContainer = document.getElementById('video-container');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

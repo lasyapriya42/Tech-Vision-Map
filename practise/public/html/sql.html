@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+
+    <!-- SQL Navbar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="about.html" id="about-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SQL Main Section -->
+    <div class="tech-section">
+        <h2>SQL Roadmap</h2>
+
+        <div class="tech-container">
+            <h3>1. Understand the Basics</h3>
+            <p>Learn about databases, tables, and basic SQL commands like SELECT, INSERT, UPDATE, DELETE. For a detailed tutorial, visit the <a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL Tutorial</a>.</p>
+
+            <h3>2. Data Types and Operators</h3>
+            <p>Get familiar with common data types (e.g., INT, VARCHAR) and operators used for comparisons and mathematical operations. Explore these topics further on <a href="https://www.sqlbolt.com/" target="_blank">SQLBolt</a>.</p>
+
+            <h3>3. Querying Data</h3>
+            <p>Learn to filter, sort, and limit results using SELECT, WHERE, ORDER BY, and LIMIT clauses. A great place to practice is the <a href="https://www.codecademy.com/learn/learn-sql" target="_blank">Codecademy SQL Course</a>.</p>
+
+            <h3>4. Joins and Relationships</h3>
+            <p>Understand different types of joins (INNER, LEFT, RIGHT) to combine data from multiple tables. Refer to <a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">this guide on SQL joins</a> for a comprehensive overview.</p>
+
+            <h3>5. Aggregation and Grouping</h3>
+            <p>Learn to aggregate data using functions like COUNT, AVG, SUM, and GROUP BY. Practice these concepts with hands-on examples on <a href="https://www.sqlbolt.com/" target="_blank">SQLBolt</a>.</p>
+
+            <h3>6. Transactions and Data Integrity</h3>
+            <p>Understand the concept of transactions, and learn about ACID properties and maintaining data integrity. You can start by reading introductory articles on <a href="https://www.geeksforgeeks.org/sql-transactions/" target="_blank">transactions in SQL</a>.</p>
+
+            <h3>7. Indexing and Optimization</h3>
+            <p>Learn how to create indexes and optimize queries to improve performance. For optimization strategies, check out <a href="https://www.geeksforgeeks.org/sql-performance-tuning/" target="_blank">this performance tuning guide</a>.</p>
+
+            <h3>8. Advanced Topics</h3>
+            <p>Explore advanced SQL features such as subqueries, recursive queries, window functions, and stored procedures. Detailed explanations are available on <a href="https://airbyte.com/data-engineering-resources/advanced-sql-concepts" target="_blank">W3Schools SQL Advanced Topics</a>.</p>
+
+            <h3>9. Practical Projects</h3>
+            <p>Build real-world SQL projects such as an inventory system or a customer database. You can find project inspiration on platforms like <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> or explore interactive examples on <a href="https://www.sqlbolt.com/" target="_blank">SQLBolt</a>.</p>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" class="video-link" target="_blank">SQL Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" class="video-link" target="_blank">SQL Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=9Pzj7Aj25lw" class="video-link" target="_blank">SQL Tutorial3</a>
+            </div>
+        </div>
+    </div> 
+        <script>
+            document.getElementById('toggle-videos').addEventListener('click', function () {
+                const videoContainer = document.getElementById('video-container');
+                const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+                videoContainer.style.display = isHidden ? 'block' : 'none';
+            });
+        </script>
+</body>
+</html>

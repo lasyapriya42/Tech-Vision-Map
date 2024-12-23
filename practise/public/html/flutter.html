@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Flutter Roadmap</h2>
+        <div class="tech-container">
+            <h3>Introduction to Flutter</h3>
+            <p>Flutter is an open-source framework created by Google to build high-quality, natively compiled applications for mobile, web, and desktop from a single codebase. To get started with Flutter, visit the official <a href="https://flutter.dev/docs/get-started/install" target="_blank">Flutter Installation Guide</a>.</p>
+
+            <h3>Core Concepts</h3>
+            <p>Understanding Flutter’s core principles, like Widgets, State Management, and Layouts, is crucial. Check out more on <a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt" target="_blank">Flutter State Management</a> to dive deeper into these concepts.</p>
+
+            <h3>Development Tools</h3>
+            <p>Flutter offers powerful tools like the CLI and DevTools. Explore how to use them at <a href="https://flutter.dev/docs/development/tools" target="_blank">Flutter Development Tools</a>.</p>
+
+            <h3>Advanced Topics</h3>
+            <ul>
+                <li><strong>Animations:</strong> Master smooth animations using Flutter. Learn how at <a href="https://flutter.dev/docs/development/ui/animations" target="_blank">Flutter Animations</a>.</li>
+                <li><strong>Networking:</strong> Learn how to make HTTP requests in Flutter at <a href="https://flutter.dev/docs/cookbook/networking/fetch-data" target="_blank">Flutter Networking</a>.</li>
+            </ul>
+
+            <h3>Deployment and Publishing</h3>
+            <p>Once your Flutter app is ready, you can deploy it to various platforms. Check out the <a href="https://flutter.dev/docs/deployment" target="_blank">Flutter Deployment Guide</a> for more information.</p>
+
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=CzRQ9mnmh44" class="video-link" target="_blank">Flutter</a>
+                <a href="https://www.youtube.com/watch?v=CD1Y2DmL5JM" class="video-link" target="_blank">Flutter</a>
+                <a href="https://www.youtube.com/watch?v=svQOxQde0bg" class="video-link" target="_blank">Flutter</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function() {
+            var videoContainer = document.getElementById('video-container');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

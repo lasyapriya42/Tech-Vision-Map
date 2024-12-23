@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <!-- Header Section (Navigation Bar at Top) -->
+    <header>
+        <nav>
+            <ul class="react-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="progress_tracker.html">Progress Tracker</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <!-- Profile Image -->
+            <div class="profile-image">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture">
+            </div>
+
+            <h2>Welcome, <span id="username">User</span></h2>
+            
+            <!-- Profile Details -->
+            <div class="profile-details">
+                <p><strong>Email:</strong> your-email@example.com</p>
+                <p><strong>Contact:</strong> +91-1234567890</p>
+                <p><strong>Location:</strong> Hyderabad, India</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // profile.js
+
+// Get username from localStorage or set default "User"
+const username = localStorage.getItem("username") || "User";
+
+// Update profile with username
+document.addEventListener("DOMContentLoaded", () => {
+    const usernameElement = document.getElementById("username");
+    usernameElement.textContent = username;
+});
+
+    </script>
+</body>
+</html>

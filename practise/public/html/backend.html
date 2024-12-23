@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Backend Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Learn a Programming Language</h3>
+            <p>Choose a language like Python, JavaScript, Java, or Go. Understand syntax, data structures, and algorithms. Explore resources <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">here</a>.</p>
+            
+            <h3>2. Learn Version Control</h3>
+            <p>Use tools like Git for managing code. Learn concepts like branching, merging, and resolving conflicts. Learn more <a href="https://git-scm.com/doc" target="_blank">here</a>.</p>
+            
+            <h3>3. Databases</h3>
+            <p>Understand relational databases like MySQL and PostgreSQL, and NoSQL databases like MongoDB. Learn to design and query databases effectively.</p>
+            
+            <h3>4. API Design</h3>
+            <p>Learn to design RESTful APIs using tools like Express.js or Flask. Understand concepts like CRUD operations, authentication, and rate limiting.</p>
+            
+            <h3>5. Security</h3>
+            <p>Understand essential security practices like encryption, validation, and protection against XSS and SQL Injection.</p>
+            
+            <h3>6. Deployment</h3>
+            <p>Learn to deploy applications using platforms like Docker, Kubernetes, or cloud services (AWS, Azure). Learn more <a href="https://aws.amazon.com/" target="_blank">here</a>.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=oBt53YbR9Kk" class="video-link" target="_blank">Data Structures and Algorithms</a>
+                <a href="https://www.youtube.com/watch?v=sBws8MSXN7A" class="video-link" target="_blank">Node.js Basics</a>
+                <a href="https://www.youtube.com/watch?v=VfGW0Qiy2I0" class="video-link" target="_blank">Docker Crash Course</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

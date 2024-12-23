@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>JavaScript Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Basics of JavaScript</h3>
+            <p>
+                <b>What is JavaScript?</b>: A language for creating interactive web pages.
+                <br>
+                <b>Key Concepts:</b>
+                <ul>
+                    <li><p><b>Variables</b>: Used to store data (<code>var</code>, <code>let</code>, <code>const</code>).</p></li>
+                    <li><p><b>Data Types</b>: Includes strings, numbers, booleans, arrays, and objects.</p></li>
+                    <li><p><b>Operators</b>: Perform calculations or comparisons.</p></li>
+                    <li><p><b>Conditionals</b>: Execute different actions based on conditions (<code>if</code>, <code>else</code>, <code>switch</code>).</p></li>
+                    <li><p><b>Loops</b>: Repeat actions multiple times (<code>for</code>, <code>while</code>).</p></li>
+                </ul>
+            </p>
+
+            <h3>2. Functions</h3>
+            <p>
+                <b>Purpose</b>: Encapsulate reusable blocks of code.
+                <br>
+                <b>Types:</b>
+
+                <ul>
+                    <li><p><b>Standard functions</b>: For performing tasks.</p></li>
+                    <li><p><b>Arrow functions</b>: For concise syntax.</p></li>
+                </ul>
+            </p>
+
+            <h3>3. Arrays and Objects</h3>
+            <p>
+                <b>Arrays</b>: Used for storing multiple items in an ordered collection.
+                
+                <b>Objects</b>: Used for storing related data as key-value pairs.
+            </p>
+
+            <h3>4. DOM Manipulation</h3>
+            <p>
+                <b>What is DOM?</b>: A programming interface for web documents.
+                
+                <b>Uses:</b>
+                <ul>
+                    <li><p>Selecting and modifying elements in a webpage.</li>
+                    <li><p>Adding event listeners to make elements interactive (e.g., clicks, key presses).</p></li>
+                </ul>
+            </p>
+
+            <h3>5. ES6 Features</h3>
+            <ul>
+                <p><b>Template Literals</b>: For embedding expressions in strings.</p>
+                
+                <p><b>Destructuring</b>: For extracting values from arrays or objects.</p>
+            
+                <b>Arrow Functions</b>: A shorter way to write functions.
+            </ul>
+
+            <h3>6. Asynchronous JavaScript</h3>
+            <ul>
+                <b>Promises</b>: Handle asynchronous operations (e.g., API requests).
+                
+                <b>Async/Await</b>: Simplifies working with asynchronous code.
+            </ul>
+
+            <h3>7. Browser APIs</h3>
+            <p>
+                <b>Fetch API</b>: For fetching data from servers.
+                
+                <b>LocalStorage</b>: For storing data in the browser that persists across sessions.
+            </p>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk" class="video-link" target="_blank">JavaScript Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" class="video-link" target="_blank">JavaScript Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=o1IaduQICO0" class="video-link" target="_blank">JavaScript Tutorial3</a>
+                
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

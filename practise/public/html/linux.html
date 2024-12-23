@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Linux Roadmap</h2>
+        <div class="tech-container">
+            <h3>Introduction to Linux</h3>
+            <p>
+                Linux is a free, open-source operating system that powers a wide variety of devices, from servers to mobile phones. 
+                Get started with Linux basics and terminal commands at 
+                <a href="https://www.linux.org/pages/download/" target="_blank">Linux.org</a>.
+            </p>
+            
+            <h3>Linux File System</h3>
+            <p>
+                The Linux file system is hierarchical and includes directories like <code>/home</code>, <code>/etc</code>, and <code>/var</code>. 
+                Learn more about Linux file system structure at 
+                <a href="https://www.geeksforgeeks.org/introduction-to-linux/" target="_blank">GeeksforGeeks: Linux</a>.
+            </p>
+
+            <h3>Basic Linux Commands</h3>
+            <p>
+                Commands like <code>ls</code>, <code>cd</code>, <code>mkdir</code>, and <code>rm</code> are essential for navigating the Linux terminal. 
+                Refer to the command cheat sheet at 
+                <a href="https://ubuntu.com/tutorials/command-line-for-beginners#1-overview" target="_blank">Ubuntu Command Line Tutorial</a>.
+            </p>
+
+            <h3>Package Management</h3>
+            <p>
+                Manage software using tools like <code>apt</code>, <code>yum</code>, or <code>dnf</code> depending on your Linux distribution. 
+                Learn more at 
+                <a href="https://linuxize.com/post/how-to-use-apt-command/" target="_blank">Linuxize: APT Command</a>.
+            </p>
+            
+            <h3>Shell Scripting</h3>
+            <p>
+                Automate tasks with shell scripting. Write scripts using bash and learn to use loops, conditions, and variables. 
+                Explore scripting at 
+                <a href="https://www.tutorialspoint.com/unix/unix-shell-scripting.htm" target="_blank">TutorialsPoint: Shell Scripting</a>.
+            </p>
+
+            <h3>Advanced Linux Topics</h3>
+            <ul>
+                <li><strong>Kernel Compilation:</strong> Learn how to compile and customize your Linux kernel.</li>
+                <li><strong>Networking:</strong> Explore advanced networking concepts like IP routing and firewalls.</li>
+                <li><strong>Linux Containers:</strong> Learn to work with Docker and LXC for virtualization.</li>
+                <li><strong>Linux Security:</strong> Explore advanced security concepts such as SELinux, AppArmor, and file system encryption.</li>
+            </ul>
+
+            <h3>Linux Certification</h3>
+            <ul>
+                <li><a href="https://www.lpi.org/our-certifications" target="_blank">Linux Professional Institute Certifications</a></li>
+                <li><a href="https://www.redhat.com/en/services/training-and-certification" target="_blank">Red Hat Certification</a></li>
+                <li><a href="https://www.udemy.com/course/linux-server-security/" target="_blank">Linux Server Security Certification on Udemy</a></li>
+            </ul>
+
+            <h3>Popular Linux Distributions</h3>
+            <ul>
+                <li><strong>Ubuntu:</strong> A beginner-friendly distribution based on Debian.</li>
+                <li><strong>Debian:</strong> Known for its stability and long release cycles.</li>
+                <li><strong>Fedora:</strong> A cutting-edge distribution sponsored by Red Hat.</li>
+                <li><strong>CentOS:</strong> Enterprise-focused Linux distribution.</li>
+            </ul>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=3N9t3MxCP8E" class="video-link" target="_blank">Linux Basics Video</a>
+                <a href="https://www.youtube.com/watch?v=wBp0Rb-ZJak" class="video-link" target="_blank">Linux File System Video</a>
+                <a href="https://www.youtube.com/watch?v=cBokz0LTizk" class="video-link" target="_blank">Linux Commands Video</a>
+                <a href="https://www.youtube.com/watch?v=v-F3YLd6oMw" class="video-link" target="_blank">Shell Scripting Video</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function() {
+            var videoContainer = document.getElementById('video-container');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

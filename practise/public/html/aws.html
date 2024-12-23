@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>AWS Roadmap</h2>
+        <div class="tech-container">
+            <h3>What is AWS?</h3>
+            <p>AWS (Amazon Web Services) is a cloud computing platform offering a wide range of services like computing power, storage, and databases. <a href="https://aws.amazon.com/">Learn more about AWS</a></p>
+            
+            <h3>Compute Services</h3>
+            <p>Services like EC2 and Lambda help you run your applications on AWS with scalability and reliability. 
+                <a href="https://aws.amazon.com/ec2/">EC2</a>, 
+                <a href="https://aws.amazon.com/lambda/">Lambda</a>
+            </p>
+            
+            <h3>Storage Solutions</h3>
+            <p>AWS provides secure storage options like S3 and Glacier for data backup and retrieval. 
+                <a href="https://aws.amazon.com/s3/">S3</a>, 
+                <a href="https://aws.amazon.com/glacier/">Glacier</a>
+            </p>
+            
+            <h3>Database Services</h3>
+            <p>Manage your data with services like RDS for relational databases and DynamoDB for NoSQL databases. 
+                <a href="https://aws.amazon.com/rds/">RDS</a>, 
+                <a href="https://aws.amazon.com/dynamodb/">DynamoDB</a>
+            </p>
+            
+            <h3>Networking Tools</h3>
+            <p>AWS networking services include VPC for isolated networks and CloudFront for fast content delivery. 
+                <a href="https://aws.amazon.com/vpc/">VPC</a>, 
+                <a href="https://aws.amazon.com/cloudfront/">CloudFront</a>
+            </p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=k1RI5locZE4" class="video-link" target="_blank">AWS Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=ThKukf8i35U&t=13493s" class="video-link" target="_blank">AWS Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=O61gbmYZJmE" class="video-link" target="_blank">AWS Tutorial3</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function() {
+            var videoContainer = document.getElementById('video-container');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

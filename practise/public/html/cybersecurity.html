@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="progress-tracker.html">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Cybersecurity Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. What is Cybersecurity?</h3>
+            <p>Cybersecurity means protecting computers, networks, and data from attacks. It’s important to keep your personal information safe and businesses secure.</p>
+            <p><a href="https://www.geeksforgeeks.org/cyber-security-types-and-importance/" target="_blank">Learn more about Cybersecurity</a></p>
+
+            <h3>2. Basics of Networking</h3>
+            <p>Understand IP addresses, protocols like HTTP and SSH, and tools like firewalls and VPNs to secure online activity.</p>
+            <p><a href="https://www.youtube.com/watch?v=3QhU9jd03a0" target="_blank">Networking Basics Video</a></p>
+
+            <h3>3. Operating Systems (OS)</h3>
+            <p>Learn about Windows, Linux, and macOS security features, such as permissions and antivirus software.</p>
+            <p><a href="https://www.geeksforgeeks.org/operating-system-security/" target="_blank">Learn Linux Basics</a></p>
+
+            <h3>4. Cyber Threats and Attacks</h3>
+            <p>Explore common attacks like malware, phishing, and DDoS, as well as serious threats like Advanced Persistent Threats (APTs).</p>
+            <p><a href="https://www.youtube.com/watch?v=-OAO7nIz7OI" target="_blank">Common Cyber Threats Explained</a></p>
+
+            <h3>5. Cryptography (Secret Codes)</h3>
+            <p>Understand symmetric and asymmetric encryption methods, and how cryptography secures online transactions and communications.</p>
+            <p><a href="https://www.geeksforgeeks.org/cryptography-tutorial/" target="_blank">Learn Cryptography Basics</a></p>
+
+            <h3>6. Finding Weaknesses</h3>
+            <p>Use tools like Nmap and Nessus to find system flaws and secure them by updating software and configurations.</p>
+            <p><a href="https://www.freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/" target="_blank">Learn Nmap</a></p>
+        
+
+            <h3>7. Tools for Protection</h3>
+            <p>Discover antivirus solutions, SIEM software, and IDS/IPS systems for enhanced monitoring and threat detection.</p>
+            <p><a href="https://www.splunk.com/en_us/blog/learn/what-splunk-does.html" target="_blank">Explore Splunk</a></p>
+            
+
+            <h3>8. What to Do After an Attack</h3>
+            <p>Learn the steps to follow after a cyber attack, including containment, recovery, and forensics.</p>
+            <p><a href="https://travasecurity.com/learn-with-trava/blog/8-things-to-do-immediately-after-a-cyber-attack/" target="_blank">Cyber Attack Response Guide</a></p>
+
+            <h3>9. Ethical Hacking (Pen Testing)</h3>
+            <p>Explore the ethical hacking process and tools like Metasploit and Wireshark for penetration testing and network monitoring.</p>
+            <p><a href="https://www.geeksforgeeks.org/introduction-to-ethical-hacking/" target="_blank">Learn Ethical Hacking</a></p>
+            
+    
+
+            <h3>10. Rules and Compliance</h3>
+            <p>Understand GDPR, ISO standards, and how risk assessments can help organizations maintain compliance and trust.</p>
+            <p><a href="https://gdpr-info.eu/" target="_blank">Learn GDPR Basics</a></p>
+        
+
+            <h3>11. Advanced Cybersecurity Areas</h3>
+            <p>Learn about cloud security, IoT security, app security, and the role of AI in cybersecurity.</p>
+            
+            
+
+            <h3>12. Building a Career in Cybersecurity</h3>
+            <p>Discover cybersecurity certifications like Security+ and CEH, and career paths such as analysts, engineers, and ethical hackers.</p>
+            <p><a href="https://www.geeksforgeeks.org/cybersecurity-roadmap/" target="_blank">How to Start a Cybersecurity Career</a></p>
+            
+
+            <h3>13. Future of Cybersecurity</h3>
+            <p>Explore emerging threats like AI-powered attacks, and defenses like Zero Trust models and smarter security systems.</p>
+            <p><a href="https://www.cybersecurity-insiders.com/" target="_blank">Stay Updated with Cybersecurity News</a></p>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-cybersecurity-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('cybersecurity-video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

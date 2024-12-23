@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Machine Learning Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. What is Machine Learning?</h3>
+            <p>Machine Learning (ML) is teaching computers to learn from data and make decisions without being explicitly told what to do.</p>
+            <ul>
+                <li><b>Main Idea:</b> Computers find patterns in data to solve problems.</li>
+                <li><b>Examples:</b> Detecting spam emails, recognizing faces, and recommending movies.</li>
+            </ul>
+            <p>Learn more on <a href="https://www.ibm.com/cloud/learn/machine-learning" target="_blank">IBM's ML Guide</a>.</p>
+            
+            <h3>2. Types of Machine Learning</h3>
+            <ul>
+                <li><b>Supervised Learning:</b> Learn from labeled data (e.g., predicting house prices).</li>
+                <li><b>Unsupervised Learning:</b> Find patterns in data without labels (e.g., customer grouping).</li>
+                <li><b>Reinforcement Learning:</b> Learn by trial and error to maximize rewards (e.g., self-driving cars).</li>
+            </ul>
+            <p>Explore detailed examples on <a href="https://towardsdatascience.com/" target="_blank">Towards Data Science</a>.</p>
+            
+            <h3>3. Common ML Methods</h3>
+            <p>Learn methods like Linear Regression, Decision Trees, Neural Networks, SVM, and KNN.</p>
+            <p>Start with tutorials on <a href="https://scikit-learn.org/stable/tutorial/basic/tutorial.html" target="_blank">Scikit-learn</a>.</p>
+
+            <h3>4. Tools for ML</h3>
+            <p>Use Python with libraries like NumPy, pandas, scikit-learn, TensorFlow, and PyTorch.</p>
+            <p>Find resources on <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a> and <a href="https://pytorch.org/" target="_blank">PyTorch</a>.</p>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=Gv9_4yMHFhI" class="video-link" target="_blank">ML Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=7eh4d6sabA0" class="video-link" target="_blank">ML Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=ukzFI9rgwfU&t=21s" class="video-link" target="_blank">ML Tutorial3</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

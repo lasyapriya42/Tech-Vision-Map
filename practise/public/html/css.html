@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Technology</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>CSS Technology</h2>
+        <div class="tech-container">
+            <h3>1. What is CSS?</h3>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It controls the layout and design of web pages.</p>
+
+            <h3>2. CSS Selectors</h3>
+            <p>
+                - Basic selectors: *, element, class, id.<br>
+                - Grouping selectors: ,.<br>
+                - Attribute selectors: [attribute=value].<br>
+                - Pseudo-classes: :hover, :nth-child().<br>
+                - Pseudo-elements: ::before, ::after.
+            </p>
+
+            <h3>3. CSS Box Model</h3>
+            <p>The box model consists of the following elements:<br>
+                - Margin<br>
+                - Border<br>
+                - Padding<br>
+                - Content
+            </p>
+            <p>Inspect and debug the box model using developer tools in modern browsers.</p>
+
+            <h3>4. CSS Units and Values</h3>
+            <p>
+                - Absolute units: px, cm, mm.<br>
+                - Relative units: %, em, rem, vh, vw.
+            </p>
+
+            <h3>5. CSS Styling Basics</h3>
+            <p>
+                - Text styling: font-size, font-family, color, text-align, line-height.<br>
+                - Backgrounds: background-color, background-image, background-size.<br>
+                - Borders: border-width, border-radius, border-style.
+            </p>
+
+            <h3>6. CSS Layout Techniques</h3>
+            <p>
+                - Display properties: block, inline, inline-block, none.<br>
+                - Positioning: static, relative, absolute, fixed, sticky.<br>
+                - Flexbox: display: flex; and related properties like justify-content, align-items.<br>
+                - CSS Grid: display: grid; and grid-template-columns, grid-template-rows.
+            </p>
+
+            <h3>7. Responsive Design</h3>
+            <p>
+                - Media queries: @media.<br>
+                - Viewport meta tag.<br>
+                - CSS units for responsiveness: vh, vw, %.
+            </p>
+
+            <h3>8. CSS Animation and Transitions</h3>
+            <p>
+                - Transitions: transition-property, transition-duration.<br>
+                - Keyframe animations: @keyframes and properties like animation-name, animation-duration.
+            </p>
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc" class="video-link" target="_blank">CSS Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=OXGznpKZ_sA" class="video-link" target="_blank">CSS Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=V1vW7-LH6eM" class="video-link" target="_blank">CSS Tutorial3</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

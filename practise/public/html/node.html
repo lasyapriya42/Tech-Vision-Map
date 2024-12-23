@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="backend-home-btn">Home</a></li>
+                <li><a href="technology.html" id="backend-technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="backend-logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Node.js Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>What is Node.js?</h3>
+            <p>Node.js is a runtime environment that allows developers to run JavaScript code server-side. It is built on Google Chrome’s V8 JavaScript engine and is designed for building scalable, fast, and lightweight applications.</p>
+            
+            <h3>Key Features of Node.js</h3>
+            <p><strong>Event-driven:</strong> Uses an event-driven, non-blocking I/O model for efficient processing.</p>
+            <p><strong>Single Threaded:</strong> Node.js uses a single thread for handling requests, optimizing performance.</p>
+            <p><strong>NPM:</strong> Node Package Manager (NPM) provides access to thousands of libraries and modules.</p>
+            
+            <h3>Common Uses of Node.js</h3>
+            <p><strong>Building APIs and Microservices:</strong> Node.js is widely used for backend APIs and microservices.</p>
+            <p><strong>Real-Time Applications:</strong> Ideal for building real-time applications like chat apps and live-streaming platforms.</p>
+            <p><strong>Web Scraping and Backend Services:</strong> Node.js is also used for web scraping and managing backend services.</p>
+            
+            <h3>Node.js Performance</h3>
+            <p><strong>Single Threaded Nature:</strong> Node.js uses a single thread for I/O tasks, making it lightweight for I/O-heavy applications.</p>
+            <p><strong>Event-Driven:</strong> Node.js can manage numerous connections simultaneously without requiring a separate thread for each, optimizing resource usage.</p>
+            
+            <h3>Real-Time Applications</h3>
+            <p><strong>Socket Programming:</strong> Real-time apps, like chat apps, use WebSockets for continuous communication.</p>
+            <p><strong>Use Cases:</strong> Examples include live updates, messaging apps, and collaborative applications.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=TlB_eWDSMt4" class="video-link" target="_blank">Node.js Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=Oe421EPjeBE" class="video-link" target="_blank">Node.js Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=2nY2UbgCfzM" class="video-link" target="_blank">Node.js Tutorial3</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

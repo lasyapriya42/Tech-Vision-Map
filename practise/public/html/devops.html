@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+
+    <!-- DevOps Navbar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- DevOps Main Section -->
+    <section class="tech-section">
+        <h2>DevOps Roadmap</h2>
+
+        <div class="tech-container">
+            <!-- Step 1: Learn the Basics -->
+            <h3>1. Learn the Basics</h3>
+            <p>Master Git and version control for code management. Understand basic networking concepts like DNS, TCP/IP, and HTTP/S.</p>
+
+            <!-- Step 2: Linux Basics -->
+            <h3>2. Linux Basics</h3>
+            <p>Get comfortable with Linux commands and system administration. Learn to manage services, users, and permissions on Linux servers.</p>
+
+            <!-- Step 3: Containers -->
+            <h3>3. Containers</h3>
+            <p>Learn Docker for containerization to create, manage, and deploy applications. Understand the benefits of containerization, such as scalability and portability.</p>
+
+            <!-- Step 4: Kubernetes -->
+            <h3>4. Kubernetes</h3>
+            <p>Understand Kubernetes for container orchestration to automate deployment, scaling, and management of containerized applications. Learn about Pods, Deployments, and Services in Kubernetes.</p>
+
+            <!-- Step 5: Infrastructure as Code (IaC) -->
+            <h3>5. Infrastructure as Code (IaC)</h3>
+            <p>Automate infrastructure provisioning using Terraform to manage and version control infrastructure. Understand the concept of declarative infrastructure management.</p>
+
+            <!-- Step 6: Cloud Platforms -->
+            <h3>6. Cloud Platforms</h3>
+            <p>Get hands-on with cloud platforms like AWS, Azure, or Google Cloud. Learn to deploy applications on the cloud, and use services like S3, EC2, RDS, and Lambda.</p>
+
+            <!-- Step 7: CI/CD -->
+            <h3>7. CI/CD (Continuous Integration/Continuous Deployment)</h3>
+            <p>Set up CI/CD pipelines using tools like Jenkins, GitLab CI, or CircleCI for automated testing, building, and deployment of applications. Integrate testing tools to catch bugs early and ensure quality in every deployment.</p>
+
+            <!-- Step 8: Monitoring & Logging -->
+            <h3>8. Monitoring & Logging</h3>
+            <p>Use tools like Prometheus, Grafana, and ELK Stack (Elasticsearch, Logstash, Kibana) to monitor application health and performance. Set up alerts to proactively respond to system failures and performance issues.</p>
+
+            <!-- Step 9: Security -->
+            <h3>9. Security</h3>
+            <p>Implement DevSecOps practices by integrating security checks into the CI/CD pipeline. Focus on securing infrastructure, managing access control, and maintaining compliance with security standards.</p>
+
+            <!-- Step 10: Automation -->
+            <h3>10. Automation</h3>
+            <p>Automate repetitive tasks with Ansible, Puppet, or Chef to manage configurations and deployments. Use scripts and tools to speed up workflow, reduce manual effort, and minimize errors.</p>
+
+            <!-- Step 11: Networking -->
+            <h3>11. Networking</h3>
+            <p>Understand key networking protocols and concepts such as HTTP, DNS, Load Balancers, and Firewalls. Learn to configure VPC (Virtual Private Cloud) and subnets in cloud environments for secure and efficient network design.</p>
+
+            <!-- Step 12: Collaboration & Communication -->
+            <h3>12. Collaboration & Communication</h3>
+            <p>Familiarize yourself with tools like Slack, Trello, or Jira for team communication and project management. Collaborate with developers to ensure smooth workflow from development to production.</p>
+
+            <!-- Step 13: Container Registry -->
+            <h3>13. Container Registry</h3>
+            <p>Understand container registries like Docker Hub or Amazon ECR to store and manage your Docker images. Learn to push and pull images to/from registries during deployment.</p>
+
+            <!-- Step 14: Versioning for Infrastructure -->
+            <h3>14. Versioning for Infrastructure</h3>
+            <p>Use tools like GitOps for versioning infrastructure configurations, enabling better management and rollback of infrastructure changes. Combine version control with IaC tools for better consistency and reliability.</p>
+
+            <!-- Step 15: Serverless Architectures -->
+            <h3>15. Serverless Architectures</h3>
+            <p>Explore serverless solutions like AWS Lambda for building event-driven applications. Understand the benefits of serverless computing, such as reduced operational overhead and scalability.</p>
+        </div>
+
+        <!-- DevOps Video Resources -->
+        <div class="video-links" id="devops-video-container">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <!-- Video Links -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-link" target="_blank">DevOps Tutorial 1</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-link" target="_blank">DevOps Tutorial 2</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-link" target="_blank">DevOps Tutorial 3</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

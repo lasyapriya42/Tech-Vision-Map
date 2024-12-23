@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence Overview</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Artificial Intelligence (AI): A Beginner-Friendly Explanation</h2>
+        <div class="tech-container">
+            <h3>What is AI?</h3>
+            <p>Artificial Intelligence, or AI, is the idea of making machines think and act like humans. It’s about creating programs that can solve problems, learn from experiences, and make decisions—just like people do.</p>
+            <ul>
+                <li>Recognizing your voice</li>
+                <li>Suggesting movies you might like</li>
+                <li>Driving a car without a driver</li>
+            </ul>
+            <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Learn More</a>
+
+            <h3>Why is AI Important?</h3>
+            <ul>
+                <li><b>Healthcare:</b> Diagnosing diseases and analyzing medical reports</li>
+                <li><b>Education:</b> Personalized learning programs for students</li>
+                <li><b>Daily Life:</b> Smart assistants like Siri, Alexa, and Google Assistant</li>
+            </ul>
+            <a href="https://builtin.com/artificial-intelligence" target="_blank">Discover AI Benefits</a>
+
+            <h3>How Does AI Work?</h3>
+            <ul>
+                <li><b>Data:</b> AI needs information to learn. Example: Show pictures of cats and dogs to teach AI to recognize them.</li>
+                <li><b>Algorithms:</b> The rules or recipes the computer follows to learn or solve problems.</li>
+                <li><b>Learning and Improving:</b> AI improves over time by learning from mistakes, just like humans.</li>
+            </ul>
+            <a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" target="_blank">Explore How AI Works</a>
+
+            <h3>Types of AI</h3>
+            <ul>
+                <li><b>Narrow AI:</b> AI designed for one task (e.g., Chatbots, facial recognition).</li>
+                <li><b>General AI:</b> AI that can think and perform any task like a human (still a dream).</li>
+                <li><b>Super AI:</b> AI smarter than humans (a future concept).</li>
+            </ul>
+            <a href="https://towardsdatascience.com/types-of-artificial-intelligence-you-should-know-117200dd24ba" target="_blank">Understand AI Types</a>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=3rc_YIK9TKQ" class="video-link" target="_blank">What is AI?</a>
+                <a href="https://www.youtube.com/watch?v=JMUxmLyrhSk" class="video-link" target="_blank">AI for Beginners</a>
+                <a href="https://www.youtube.com/watch?v=aircAruvnKk" class="video-link" target="_blank">Machine Learning Basics</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

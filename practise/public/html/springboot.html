@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="springboot-home-btn">Home</a></li>
+                <li><a href="technology.html" id="springboot-technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Spring Boot Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Overview of Spring Boot</h3>
+            <p>Spring Boot is a framework designed to simplify building Java applications. It helps developers create production-ready apps with minimal effort by offering pre-configured setups and reducing boilerplate code.Learn more
+                <a href="https://www.javatpoint.com/spring-boot-tutorial">here</a>
+            </p>
+            
+            <h3>2. Why Use Spring Boot?</h3>
+            <p>Key reasons include ease of development, microservices readiness, and quick setup with default configurations. Learn more <a href="https://spring.io/projects/spring-boot" target="_blank">here</a>.</p>
+            
+            <h3>3. Key Features</h3>
+            <p>Embedded servers, auto-configuration, Spring Boot starters for quick functionality additions, and the Actuator for monitoring applications are essential features.</p>
+            
+            <h3>4. Main Concepts</h3>
+            <p>Understand the Spring Boot starter libraries, Spring Boot CLI for rapid application prototyping, and profiles to manage multiple configurations like dev, test, and prod.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=vtPkZShrvXQ" class="video-link" target="_blank">Spring Boot Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=35EQXmHKZYs" class="video-link" target="_blank">Spring Boot Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=_thI-4AF7M8" class="video-link" target="_blank">Spring Boot Tutorial3</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

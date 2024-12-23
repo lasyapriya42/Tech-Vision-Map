@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="vue-logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Vue.js Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. What is Vue.js?</h3>
+            <p>
+                Vue.js is a progressive JavaScript framework for building user interfaces and single-page applications. 
+                It focuses on simplicity, flexibility, and ease of use. Learn more 
+                <a href="https://vuejs.org/" target="_blank">here</a>.
+            </p>
+            
+            <h3>2. Core Features</h3>
+            <p>
+                <strong>Reactivity:</strong> Automatic updates to the UI when data changes.<br>
+                <strong>Directives:</strong> Special attributes like <code>v-if</code> (conditions) and <code>v-for</code> (loops).<br>
+                <strong>Components:</strong> Reusable pieces to structure your application.
+            </p>
+            
+            <h3>3. Why Choose Vue.js?</h3>
+            <p>
+                - Easy to learn and integrate.<br>
+                - Lightweight but powerful.<br>
+                - Excellent documentation and community support.
+            </p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=FXpIoQ_rT_c" class="video-link" target="_blank">Vue.js Crash Course</a>
+                <a href="https://www.youtube.com/watch?v=qZXt1Aom3Cs" class="video-link" target="_blank">Vue.js for Beginners</a>
+                <a href="https://www.youtube.com/watch?v=OrxmtDw4pVI" class="video-link" target="_blank">Vue.js 3 Basics</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

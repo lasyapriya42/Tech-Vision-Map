@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="technology.html" id="tech-link">Technology</a></li>
+                <li><a href="#" id="progress-link">Progress Tracker</a></li>
+                <li><a href="profile.html" id="profile-link"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html" id="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>HTML</h2>
+        <div class="tech-container">
+            <h3>1. What is HTML?</h3>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a webpage using a system of elements and tags.</p>
+
+            <h3>2. Basic Structure of an HTML Document</h3>
+            <p>An HTML document consists of the following structure:</p>
+            <p>&lt;html&gt;, &lt;head&gt;, &lt;body&gt; are the basic building blocks.</p>
+
+            <h3>3. HTML Elements and Tags</h3>
+            <p>Common tags include &lt;h1&gt; to &lt;h6&gt;, &lt;p&gt;, &lt;div&gt;, and &lt;span&gt;. Text formatting uses tags like &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;em&gt;, &lt;strong&gt;. Semantic tags include &lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;article&gt;, and &lt;section&gt;.</p>
+
+            <h3>4. HTML Attributes</h3>
+            <p>Attributes provide additional information about elements. Global attributes include id, class, and style. Specific attributes like src for images and href for links add functionality.</p>
+
+            <h3>5. HTML Forms</h3>
+            <p>Forms use elements like &lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;, &lt;select&gt;, and &lt;option&gt;. Key attributes are action, method, placeholder, and required.</p>
+
+            <h3>6. Multimedia in HTML</h3>
+            <p>Use &lt;img&gt; for images, &lt;audio&gt; for sound, and &lt;video&gt; for videos. Each has attributes like src, alt, controls, autoplay, and loop.</p>
+
+            <h3>7. HTML Tables</h3>
+            <p>Tables are structured with &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;, &lt;td&gt;, and &lt;th&gt;. Attributes like border, cellspacing, and cellpadding control appearance.</p>
+
+            <h3>8. HTML Links and Navigation</h3>
+            <p>Use &lt;a&gt; with href for links. Create navigation with &lt;nav&gt;. Anchor links and external links are common.</p>
+
+            <h3>9. HTML Lists</h3>
+            <p>Ordered lists use &lt;ol&gt; and &lt;li&gt;. Unordered lists use &lt;ul&gt; and &lt;li&gt;. Description lists use &lt;dl&gt;, &lt;dt&gt;, and &lt;dd&gt;.</p>
+
+            <h3>10. HTML5 Features</h3>
+            <p>HTML5 introduces new elements like &lt;article&gt;, &lt;section&gt;, and &lt;aside&gt;, as well as features like &lt;canvas&gt; for graphics and &lt;iframe&gt; for embedding content.</p>
+
+            <h3>11. Best Practices</h3>
+            <p>Write semantic and accessible HTML. Use proper indentation, nesting, and comments (e.g., &lt;!-- Comment --&gt;).</p>
+        </div>
+
+        <div class="video-resources">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" class="video-link" target="_blank">HTML Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" class="video-link" target="_blank">HTML Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=bWPMSSsVdPk" class="video-link" target="_blank">HTML Tutorial3</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

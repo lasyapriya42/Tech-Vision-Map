@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>API Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Understand the Basics</h3>
+<p>Start by learning the fundamentals of API concepts, what they are, and how they work.<a href="https://developer.ibm.com/articles/api-fundamentals/" class="api-resource-link" target="_blank">API fundamentals</a></p>
+
+
+<h3>2. Learn API Design</h3>
+<p>Learn how to design APIs with clear documentation, structure, and protocols.</p>
+
+<h3>3. Explore RESTful APIs</h3>
+<p>Understand RESTful principles and how to use HTTP methods for effective communication.
+<a href="https://www.geeksforgeeks.org/rest-api-introduction/" class="api-resource-link" target="_blank">REST API</a></p>
+
+
+<h3>4. Learn Authentication & Security</h3>
+<p>Understand how to secure APIs using OAuth, JWT, and other authentication methods.<a href="https://www.digitalocean.com/community/tutorials/oauth-2-0-an-introduction" class="api-resource-link" target="_blank">OAuth</a>
+    <a href="https://jwt.io/introduction/" class="api-resource-link" target="_blank">JWT</a>
+    </p>
+
+<h3>5. Work with API Documentation</h3>
+<p>Learn how to document your APIs using Swagger, OpenAPI, or Postman for testing.<a href="https://swagger.io/tools/swagger-editor/" class="api-resource-link" target="_blank">Swagger Editor</a> 
+    <a href="https://www.postman.com/" class="api-resource-link" target="_blank">Postman</a></p>
+
+
+        <h3>6. Learn Deployment and Scaling</h3>
+        <p>Learn how to deploy APIs using cloud platforms and scale them effectively.</p>
+        
+
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=WXsD0ZgxjRw" class="video-link" target="_blank">API Tutorial</a>
+                <a href="https://www.youtube.com/watch?v=rtWH70_MMHM" class="video-link" target="_blank">REST API Tutorial</a>
+                <a href="https://www.youtube.com/watch?v=4TQ_c72ffE4" class="video-link" target="_blank">API Security</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

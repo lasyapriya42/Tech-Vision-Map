@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Development Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="mongo-home-btn">Home</a></li>
+                <li><a href="technology.html" id="mongo-technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="mongo-logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>MongoDB Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>What is MongoDB?</h3>
+            <p>MongoDB is a NoSQL, document-oriented database that stores data in JSON-like format. It provides flexibility, scalability, and is ideal for applications requiring fast data handling.</p>
+            
+            <h3>Key Features of MongoDB</h3>
+            <p><strong>Document-Based Storage:</strong> Stores data in JSON-like BSON format.</p>
+            <p><strong>Scalability:</strong> Supports horizontal scaling and sharding for large applications.</p>
+            <p><strong>High Availability:</strong> Built-in replication ensures data availability.</p>
+            
+            <h3>Common Uses of MongoDB</h3>
+            <p><strong>Web Applications:</strong> Ideal for real-time applications and large data storage.</p>
+            <p><strong>Content Management:</strong> Efficient for storing varied content types.</p>
+            
+            <h3>Performance & Efficiency</h3>
+            <p><strong>Speed:</strong> Quick reads and writes, especially with large datasets.</p>
+            <p><strong>Data Flexibility:</strong> No rigid schema for easy data modeling.</p>
+            
+            <h3>MongoDB Use Cases</h3>
+            <p><strong>Real-Time Analytics:</strong> For applications needing real-time data processing.</p>
+            <p><strong>IoT Applications:</strong> Handling large data volumes and quick updates.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=example1" class="video-link" target="_blank">MongoDB Crash Course</a>
+                <a href="https://www.youtube.com/watch?v=example2" class="video-link" target="_blank">MongoDB Tutorial for Beginners</a>
+                <a href="https://www.youtube.com/watch?v=example3" class="video-link" target="_blank">Learn MongoDB in 30 Minutes</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

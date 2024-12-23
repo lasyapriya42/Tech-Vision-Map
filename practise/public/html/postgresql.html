@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostgreSQL Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>PostgreSQL Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Learn SQL Basics</h3>
+            <p>Start with the fundamentals of SQL including SELECT, INSERT, UPDATE, DELETE statements. Explore more <a href="https://www.sqltutorial.org/" target="_blank">here</a>.</p>
+            
+            <h3>2. PostgreSQL Syntax</h3>
+            <p>Understand PostgreSQL-specific features such as its data types, operators, and unique functions. Explore the official documentation <a href="https://www.postgresql.org/docs/" target="_blank">here</a>.</p>
+            
+            <h3>3. Database Design</h3>
+            <p>Learn how to design normalized databases, create tables, and establish relationships between them. Learn more <a href="https://www.vertabelo.com/blog/technical-articles/postgresql-tutorial" target="_blank">here</a>.</p>
+            
+            <h3>4. Advanced PostgreSQL Features</h3>
+            <p>Learn about advanced features like indexing, full-text search, triggers, and stored procedures.</p>
+            
+            <h3>5. Performance Optimization</h3>
+            <p>Learn how to optimize PostgreSQL queries, analyze execution plans, and use EXPLAIN for query optimization.</p>
+            
+            <h3>6. PostgreSQL Deployment</h3>
+            <p>Learn how to deploy PostgreSQL databases on cloud platforms like AWS or on-premise servers. Explore tutorials <a href="https://aws.amazon.com/rds/postgresql/" target="_blank">here</a>.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=qw--VYLpxG4" class="video-link" target="_blank">PostgreSQL Basics</a>
+                <a href="https://www.youtube.com/watch?v=zw4s3Ey8ayo" class="video-link" target="_blank">SQL Tutorial for Beginners</a>
+                <a href="https://www.youtube.com/watch?v=9ZixI8Xy0T0" class="video-link" target="_blank">Advanced PostgreSQL Tips</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

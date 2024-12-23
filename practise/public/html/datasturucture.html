@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="datastructures.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Data Structures Roadmap</h2>
+        <div class="tech-container">
+            <h3>Arrays</h3>
+            <p>Arrays store elements in contiguous memory locations, ideal for sequential access. They are best used when the size of the data is known beforehand and frequent indexing is required. Common operations include traversal, insertion, deletion, and search.</p>
+            <p>Example: Storing student marks in a class.<a href="https://www.geeksforgeeks.org/array-data-structure/">Learn more</a></p>
+            
+
+            <h3>Linked Lists</h3>
+            <p>A sequence of nodes where each node contains data and a pointer to the next node. Linked lists are efficient for dynamic data storage as they allow easy insertion and deletion. Variants include singly linked lists, doubly linked lists, and circular linked lists.</p>
+            <p>Example: Implementing undo functionality in text editors.<a href="https://www.geeksforgeeks.org/linked-list-data-structure/">Learn more</a></p>
+            
+
+            <h3>Stacks</h3>
+            <p>Stacks operate on the Last In First Out (LIFO) principle. They are commonly used in recursive algorithms, undo mechanisms, and syntax parsing. Operations include push, pop, and peek.</p>
+            <p>Example: Managing browser history or backtracking a maze.<a href="https://www.geeksforgeeks.org/stack-data-structure/">Learn more</a></p>
+            
+
+            <h3>Queues</h3>
+            <p>Queues operate on the First In First Out (FIFO) principle. They are ideal for scheduling processes in operating systems and managing tasks in printers. Variants include circular queues, priority queues, and dequeues.</p>
+            <p>Example: Implementing a ticket booking system.<a href="https://www.geeksforgeeks.org/queue-data-structure/">Learn more</a>
+            </p>
+            
+            <h3>Hash Tables</h3>
+            <p>Hash tables use hash functions to map keys to values. They are efficient for quick lookups and insertions, making them essential for database indexing and caches. Collisions are handled using techniques like chaining or open addressing.</p>
+            <p>Example: Implementing a dictionary in programming languages.<a href="https://www.geeksforgeeks.org/hash-table-data-structure/">Learn more</a></p>
+            
+
+            <h3>Trees</h3>
+            <p>Trees are hierarchical data structures consisting of nodes. They are widely used in search algorithms, organizing hierarchical data, and network routing. Types include binary trees, binary search trees, AVL trees, and heaps.</p>
+            <p>Example: Representing file directories in operating systems.<a href="https://www.geeksforgeeks.org/binary-tree-data-structure/">Learn more</a></p>
+            
+        </div>
+
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=3_x_Fb31NLE" class="video-link" target="_blank">Arrays - Introduction</a>
+                <a href="https://www.youtube.com/watch?v=R9PTBwOzceo" class="video-link" target="_blank">Linked Lists - Introduction</a>
+                <a href="https://www.youtube.com/watch?v=wjI1WNcIntg" class="video-link" target="_blank">Stacks & Queues - Introduction</a>
+                <a href="https://www.youtube.com/watch?v=shs0KM3wKv8" class="video-link" target="_blank">Hash Tables - Introduction</a>
+                <a href="https://www.youtube.com/watch?v=qH6yxkw0u78" class="video-link" target="_blank">Trees - Introduction</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function() {
+            var videoContainer = document.getElementById('video-container');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

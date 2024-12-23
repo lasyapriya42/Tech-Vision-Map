@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Technologies</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>React Technologies</h2>
+        <div class="tech-container">
+            <h3>1. What is React?</h3>
+            <p>React is a JavaScript library used for building user interfaces with reusable components. It focuses on creating dynamic and responsive web applications with features like JSX and Virtual DOM. Learn more about React <a href="https://reactjs.org/" target="_blank">here</a>.</p>
+            
+            <h3>2. Setting Up a React Project</h3>
+            <p>Use tools like Create React App or Vite to quickly set up and start working with React. These tools automate most of the configuration, letting you focus on development. Learn more <a href="https://reactjs.org/docs/create-a-new-react-app.html" target="_blank">here</a>.</p>
+            
+            <h3>3. Core Concepts of React</h3>
+            <p>React's core concepts include:</p>
+            <ul>
+                <li><strong>Props:</strong> Properties passed from parent to child components, read-only. Learn more <a href="https://reactjs.org/docs/components-and-props.html" target="_blank">here</a>.</li>
+                <li><strong>State:</strong> Local data that can change and trigger re-renders. Learn more <a href="https://reactjs.org/docs/state-and-lifecycle.html" target="_blank">here</a>.</li>
+                <li><strong>Events:</strong> React’s event system for handling user interactions like clicks and form submissions. Learn more <a href="https://reactjs.org/docs/handling-events.html" target="_blank">here</a>.</li>
+                <li><strong>Conditional Rendering:</strong> Dynamically render components or elements based on conditions using if statements or logical operators. Learn more <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">here</a>.</li>
+                <li><strong>Lists and Keys:</strong> Dynamically render lists using the `.map()` method and ensure proper performance with unique `key` props. Learn more <a href="https://reactjs.org/docs/lists-and-keys.html" target="_blank">here</a>.</li>
+            </ul>
+            
+            <h3>4. React Hooks</h3>
+            <p>Hooks in React let you use state and other features in functional components:</p>
+            <ul>
+                <li><strong>useState:</strong> A hook that allows functional components to have local state. Learn more <a href="https://reactjs.org/docs/hooks-state.html">here</a>.</li>
+                <li><strong>useEffect:</strong> A hook used for performing side effects such as fetching data or updating the DOM. Learn more <a href="https://reactjs.org/docs/hooks-effect.html" target="_blank">here</a>.</li>
+            </ul>
+            
+            <h3>5. React Router (Basics of Routing)</h3>
+            <p>React Router allows you to implement navigation within a React app without full page reloads. Learn how to use components like `<BrowserRouter>`, `<Route>`, and `<Link>` for routing. Learn more <a href="https://reactrouter.com/web/guides/quick-start" target="_blank">here</a>.</p>
+            
+            <h3>6. Forms and Controlled Components</h3>
+            <p>React provides controlled components to handle form input, where the form data is managed by React's state. Learn more <a href="https://reactjs.org/docs/forms.html" target="_blank">here</a>.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" class="video-link" target="_blank">React Tutorial 1</a>
+                <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" class="video-link" target="_blank">React Tutorial 2</a>
+                <a href="https://www.youtube.com/watch?v=DLX62G4lc44" class="video-link" target="_blank">React Tutorial 3</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+    
+</body>
+</html>

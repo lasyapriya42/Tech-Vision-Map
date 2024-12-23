@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Technologies</title>
+    <link rel="stylesheet" href="../css/technology.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="center-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="interactive-content">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a skill..." />
+        </div>
+        <div class="container">
+            <div class="block" data-page="frontend.html"><a href="frontend.html">Frontend</a></div>
+            <div class="block" data-page="backend.html"><a href="backend.html">Backend</a></div>
+            <div class="block" data-page="fullstack.html"><a href="fullstack.html">Full Stack</a></div>
+            <div class="block" data-page="devops.html"><a href="devops.html">DevOps</a></div>   
+            <div class="block" data-page="html.html"><a href="html.html">HTML</a></div>
+            <div class="block" data-page="css.html"><a href="css.html">CSS</a></div>
+            <div class="block" data-page="javascript.html"><a href="javascript.html">Javascript</a></div>
+            <div class="block" data-page="nodejs.html"><a href="node.html">Node.js</a></div>
+            <div class="block" data-page="sql.html"><a href="sql.html">SQL</a></div>
+            <div class="block" data-page="api.html"><a href="api.html">API</a></div>
+            <div class="block" data-page="postgresql.html"><a href="postgresql.html">PostgreSQL</a></div>
+            <div class="block" data-page="git.html"><a href="git.html">Git and Github</a></div>
+            <div class="block" data-page="react.html"><a href="react.html">React</a></div>
+            <div class="block" data-page="vue.html"><a href="vue.html">Vue</a></div>
+            <div class="block" data-page="angular.html"><a href="angular.html">Angular</a></div>
+            <div class="block" data-page="docker.html"><a href="docker.html">Docker</a></div>
+            <div class="block" data-page="aws.html"><a href="aws.html">AWS</a></div>
+            <div class="block" data-page="linux.html"><a href="linux.html">Linux</a></div>
+            <div class="block" data-page="springboot.html"><a href="springboot.html">Spring Boot</a></div>
+            <div class="block" data-page="reactnative.html"><a href="reactnative.html">React Native</a></div>
+            <div class="block" data-page="flutter.html"><a href="flutter.html">Flutter</a></div>
+            <div class="block" data-page="mongodb.html"><a href="mongodb.html">MongoDB</a></div>
+            <div class="block" data-page="datastructures.html"><a href="datasturucture.html">Data Structures</a></div>
+            <div class="block" data-page="cybersecurity.html"><a href="cybersecurity.html">Cyber Security</a></div>
+            <div class="block" data-page="ai.html"><a href="ai.html">AI</a></div>
+            <div class="block" data-page="machinelearning.html"><a href="machinelearning.html">Machine Learning</a></div>
+        </div>
+    </div>
+
+    <script>
+        // Event listener for the Home button
+document.getElementById('home-btn').addEventListener('click', function () {
+    // Redirect to the homepage
+    window.location.href = 'index.html';
+});
+
+// Event listener for the Technology button
+document.getElementById('resources-btn').addEventListener('click', function () {
+    // Redirect to the technology page (it will be the same since you're already on the page)
+    window.location.href = 'technology.html';
+});
+
+// Search functionality
+document.getElementById('search-bar').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    const blocks = document.querySelectorAll('.block');
+    
+    blocks.forEach(block => {
+        if (block.textContent.toLowerCase().includes(query)) {
+            block.style.display = 'block'; // Show matching blocks
+        } else {
+            block.style.display = 'none'; // Hide non-matching blocks
+        }
+    });
+});
+
+// Add event listeners to all blocks
+const blocks = document.querySelectorAll('.block');
+blocks.forEach(block => {
+    block.addEventListener('click', function () {
+        const page = block.getAttribute('data-page');
+        window.location.href = page; // Redirect to the corresponding page
+    });
+});
+
+    </script>
+</body>
+</html>

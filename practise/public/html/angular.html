@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>Angular Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>1. Learn the Basics</h3>
+            <p>Understand TypeScript, Angular CLI, and the project structure. Start with basic concepts like components, templates, and modules. Explore resources <a href="https://angular.io/start" target="_blank">here</a>.</p>
+            
+            <h3>2. Master Components</h3>
+            <p>Learn how to create reusable components, manage inputs and outputs, and implement lifecycle hooks. Learn more <a href="https://angular.io/guide/architecture-components" target="_blank">here</a>.</p>
+            
+            <h3>3. Routing and Navigation</h3>
+            <p>Understand Angular Router for navigation, lazy loading modules, and guard implementations for route security.</p>
+            
+            <h3>4. Services and Dependency Injection</h3>
+            <p>Master creating services to manage logic and data. Understand dependency injection and its benefits in Angular.</p>
+            
+            <h3>5. RxJS and Observables</h3>
+            <p>Learn to handle asynchronous data streams effectively using RxJS. Understand observables, subjects, and operators.</p>
+            
+            <h3>6. Forms and Validation</h3>
+            <p>Implement template-driven and reactive forms. Learn to validate forms and display error messages dynamically.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=3qBXWUpoPHo" class="video-link" target="_blank">Angular Basics</a>
+                <a href="https://www.youtube.com/watch?v=k5E2AVpwsko" class="video-link" target="_blank">RxJS Tutorial</a>
+                <a href="https://www.youtube.com/watch?v=KhzGSHNhnbI" class="video-link" target="_blank">Angular Forms Tutorial</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

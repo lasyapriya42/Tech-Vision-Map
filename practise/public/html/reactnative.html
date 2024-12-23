@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Native Roadmap</title>
+    <link rel="stylesheet" href="../css/api.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="react-home-btn">Home</a></li>
+                <li><a href="technology.html" id="react-technology-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="react-logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tech-section">
+        <h2>React Native Development Roadmap</h2>
+        <div class="tech-container">
+            <h3>What is React Native?</h3>
+            <p>
+                React Native is a popular framework for building mobile applications using JavaScript and React. 
+                It enables developers to create cross-platform apps for iOS and Android with a single codebase. 
+                Learn more on the <a href="https://reactnative.dev/" target="_blank">official React Native website</a>.
+            </p>
+            
+            <h3>Key Features of React Native</h3>
+            <p><strong>Cross-Platform Development:</strong> Write once and deploy to both iOS and Android.</p>
+            <p><strong>Hot Reloading:</strong> Instantly view changes in the application during development. Learn about this feature on the <a href="https://reactnative.dev/docs/fast-refresh" target="_blank">Fast Refresh Documentation</a>.</p>
+            <p><strong>Native Modules:</strong> Access platform-specific features using native code integration. Explore more on <a href="https://medium.com/@dev_one/react-native-native-modules-ee5a8f390a7" target="_blank">Native Modules Guide</a>.</p>
+            
+            <h3>Common Uses of React Native</h3>
+            <p><strong>Mobile Applications:</strong> Ideal for building performance-focused mobile apps. Check out examples on the <a href="https://reactnative.dev/showcase" target="_blank">React Native Showcase</a>.</p>
+            <p><strong>Prototyping:</strong> Rapid development of prototypes and MVPs. See how companies use it on <a href="https://expo.dev/" target="_blank">Expo</a>.</p>
+            
+            <h3>Performance & Efficiency</h3>
+            <p><strong>Reusable Components:</strong> Speeds up development with modular components. Learn about component-based architecture on the <a href="https://reactnative.dev/docs/components-and-apis" target="_blank">Components and APIs page</a>.</p>
+            <p><strong>Community Support:</strong> A vast ecosystem of libraries and community contributions. Explore community tools on <a href="https://awesome-react-native.com/" target="_blank">Awesome React Native</a>.</p>
+            
+            <h3>React Native Use Cases</h3>
+            <p><strong>Social Media Apps:</strong> Examples include <a href="https://about.instagram.com/" target="_blank">Instagram</a> and <a href="https://about.fb.com/" target="_blank">Facebook</a>.</p>
+            <p><strong>eCommerce Apps:</strong> Platforms like <a href="https://www.shopify.com/" target="_blank">Shopify</a> and <a href="https://www.wix.com/" target="_blank">Wix</a> use React Native.</p>
+        </div>
+      
+        <div class="video-links">
+            <button id="toggle-videos">Video Resources</button>
+            <div id="video-container" style="display: none;">
+                <a href="https://www.youtube.com/watch?v=mkualZPRZCs" class="video-link" target="_blank">React Native Tutorial1</a>
+                <a href="https://www.youtube.com/watch?v=0-S5a0eXPoc" class="video-link" target="_blank">React Native Tutorial2</a>
+                <a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4" class="video-link" target="_blank">React Native Tutorial3</a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('toggle-videos').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container');
+            const isHidden = videoContainer.style.display === 'none' || videoContainer.style.display === '';
+            videoContainer.style.display = isHidden ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

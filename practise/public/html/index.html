@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Vision Map</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="center-links">
+                <li><a href="index.html" id="home-btn">Home</a></li>
+                <li><a href="technology.html" id="resources-btn">Technology</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="logout"><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h1>Welcome to Tech Vision Map</h1>
+            <p>Start your tech journey with us.</p>
+        </div>
+    </section>
+
+    <script>
+        
+document.getElementById('home-btn').addEventListener('click', function () {
+    // Show the welcome section
+    document.querySelector('.welcome-section').style.display = 'flex';
+    
+    // Hide the interactive content
+    document.getElementById('interactive-content').style.display = 'none';
+});
+
+// Event listener for the Technology button
+document.getElementById('resources-btn').addEventListener('click', function () {
+    // Hide the welcome section
+    document.querySelector('.welcome-section').style.display = 'none';
+    
+    // Show the interactive content (i.e., the technologies grid)
+    document.getElementById('interactive-content').style.display = 'block';
+});
+    </script>
+</body>
+</html>

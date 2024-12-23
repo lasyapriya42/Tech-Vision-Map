@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container login-container" id="login-form">
+            <h2>Welcome To Tech Vision Map</h2>
+            <p>Enter your credentials to login</p>
+            <form id="login">
+                <div class="input-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p><a href="#" id="forgot-password">Forgot Password?</a></p>
+                <div class="footer-text">
+                    <p>Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container signup-container" id="signup-form" style="display: none;">
+            <h2>Create an Account</h2>
+            <p>Join us today!</p>
+            <form id="signup">
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Sign Up</button>
+                <div class="footer-text">
+                    <p>Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Handle login logic here
+    window.location.href = "index.html"; // Redirect to the home page
+});
+
+document.getElementById('signup').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Handle signup logic here
+    window.location.href = "index.html"; // Redirect to the home page
+});
+
+document.getElementById('switch-to-signup').addEventListener('click', function() {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signup-form').style.display = 'block';
+});
+
+document.getElementById('switch-to-login').addEventListener('click', function() {
+    document.getElementById('signup-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+});
+
+document.getElementById('forgot-password').addEventListener('click', function(event) {
+    event.preventDefault();
+    // Handle forgot password logic here
+    alert("Password recovery process initiated."); // Placeholder for password recovery logic
+});
+
+    </script>
+</body>
+</html>
